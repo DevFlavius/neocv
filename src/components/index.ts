@@ -1,0 +1,11 @@
+export { Header } from './Header';
+export { Hero } from './Hero';
+export { About } from './About';
+export { Equipments } from './Equipments';
+export { Services } from './Services';
+export { Portfolio } from './Portfolio';
+export { Clients } from './Clients';
+export { Contact } from './Contact';
+export { Footer } from './Footer';
+export { WhatsAppButton } from './WhatsAppButton';
+export { Watermark } from './Watermark';

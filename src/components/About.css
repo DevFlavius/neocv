@@ -1,0 +1,119 @@
+.about {
+    background: var(--neo-dark-light);
+    overflow: hidden;
+}
+
+.about__watermark {
+    position: absolute;
+    left: -15%;
+    top: 50%;
+    transform: translateY(-50%) rotate(15deg);
+    width: 50vw;
+    max-width: 600px;
+    pointer-events: none;
+    filter: brightness(2);
+}
+
+.about__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+    align-items: start;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.about__content h3 {
+    font-size: 1.8rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--neo-orange);
+}
+
+.about__content p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.about__content p strong {
+    color: var(--neo-white);
+}
+
+.about__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background: rgba(254, 108, 0, 0.1);
+    border: 1px solid rgba(254, 108, 0, 0.3);
+    border-radius: var(--radius-full);
+    color: var(--neo-orange);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all var(--transition-base);
+}
+
+.about__cta:hover {
+    background: var(--neo-orange);
+    color: var(--neo-white);
+}
+
+.about__features {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.about__feature {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+}
+
+.about__feature-icon {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--neo-gradient-primary);
+    border-radius: var(--radius-md);
+    flex-shrink: 0;
+}
+
+.about__feature-content h4 {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-xs);
+    color: var(--neo-white);
+}
+
+.about__feature-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+    .about__grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .about__watermark {
+        width: 100vw;
+        left: -30%;
+        opacity: 0.02;
+    }
+}
+
+@media (max-width: 576px) {
+    .about__feature {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
