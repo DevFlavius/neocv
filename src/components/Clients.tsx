@@ -4,12 +4,12 @@ import './Clients.css';
 
 // Clientes baseados na imagem fornecida
 const clients = [
-    { name: 'Banese', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Banese_logo.svg/200px-Banese_logo.svg.png' },
-    { name: 'Bompreço', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Bompreco_logo.svg/200px-Bompreco_logo.svg.png' },
-    { name: 'Vivo', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Vivo_logo.svg/200px-Vivo_logo.svg.png' },
-    { name: 'Magazine Luiza', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Magazine_Luiza_logo.svg/200px-Magazine_Luiza_logo.svg.png' },
-    { name: 'RioMar', logo: 'https://logodownload.org/wp-content/uploads/2019/08/riomar-shopping-logo.png' },
-    { name: 'Chesf', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Chesf_logo.svg/200px-Chesf_logo.svg.png' },
+    { name: 'Banese', logo: 'https://images.seeklogo.com/logo-png/19/1/banese-logo-png_seeklogo-190064.png' },
+    { name: 'Bompreço', logo: 'https://upload.wikimedia.org/wikipedia/commons/5/55/Logotipo_do_BIG_Bompre%C3%A7o.svg' },
+    { name: 'Vivo', logo: 'https://upload.wikimedia.org/wikipedia/commons/7/70/Logo_VIVO.svg' },
+    { name: 'Magazine Luiza', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/1b/Magalu_-_novo_logo.png' },
+    { name: 'RioMar', logo: 'https://mamiferosaquaticos.org.br/system/7LvBKdYaKWvf49WM80Vk6Eqm8Lc4OOTKUMLejaqGyOsh5zcpcaxlx-Dem951Mj-vHWl_h-xYS4RIssVH__HHOg/files/FMA/r%20RioMar-Shopping-Vers%C3%A3o-Horizontal-01.png' },
+    { name: 'Chesf', logo: 'https://www.diversaconsultoria.com.br/assets/img/clientes/chesf.png' },
 ];
 
 // Mais clientes para o carrossel
