@@ -11,7 +11,7 @@ export function Footer() {
                     {/* Logo e Descrição */}
                     <div className="footer__brand">
                         <a href="#inicio" className="footer__logo">
-                            <img src="/logo.svg" alt="Neo Comunicação Visual" />
+                            <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="Neo Comunicação Visual" />
                         </a>
                         <p>
                             Transformando ideias em soluções visuais impactantes desde 2008.

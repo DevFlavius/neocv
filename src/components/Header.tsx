@@ -32,7 +32,7 @@ export function Header() {
     >
       <div className="container header__container">
         <a href="#inicio" className="header__logo">
-          <img src="/logo.svg" alt="Neo Comunicação Visual" />
+          <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="Neo Comunicação Visual" />
         </a>
 
         <nav className="header__nav">

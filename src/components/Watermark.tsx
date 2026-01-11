@@ -6,6 +6,8 @@ interface WatermarkProps {
     opacity?: number;
 }
 
+const logoOutline = `${import.meta.env.BASE_URL}logo-outline.svg`;
+
 export function Watermark({ variant = 'pattern', opacity = 0.03 }: WatermarkProps) {
     // Versão com pattern - múltiplos logos em 90 graus com tamanhos variados
     if (variant === 'pattern') {
@@ -13,7 +15,7 @@ export function Watermark({ variant = 'pattern', opacity = 0.03 }: WatermarkProp
             <div className="watermark-pattern" style={{ opacity: opacity * 2 }}>
                 {/* Logos em diferentes posições, tamanhos e rotações de 90 graus */}
                 <motion.img
-                    src="/logo-outline.svg"
+                    src={logoOutline}
                     alt=""
                     className="watermark-pattern__logo watermark-pattern__logo--1"
                     initial={{ opacity: 0 }}
@@ -21,7 +23,7 @@ export function Watermark({ variant = 'pattern', opacity = 0.03 }: WatermarkProp
                     transition={{ duration: 1, delay: 0.2 }}
                 />
                 <motion.img
-                    src="/logo-outline.svg"
+                    src={logoOutline}
                     alt=""
                     className="watermark-pattern__logo watermark-pattern__logo--2"
                     initial={{ opacity: 0 }}
@@ -29,7 +31,7 @@ export function Watermark({ variant = 'pattern', opacity = 0.03 }: WatermarkProp
                     transition={{ duration: 1, delay: 0.4 }}
                 />
                 <motion.img
-                    src="/logo-outline.svg"
+                    src={logoOutline}
                     alt=""
                     className="watermark-pattern__logo watermark-pattern__logo--3"
                     initial={{ opacity: 0 }}
@@ -37,7 +39,7 @@ export function Watermark({ variant = 'pattern', opacity = 0.03 }: WatermarkProp
                     transition={{ duration: 1, delay: 0.6 }}
                 />
                 <motion.img
-                    src="/logo-outline.svg"
+                    src={logoOutline}
                     alt=""
                     className="watermark-pattern__logo watermark-pattern__logo--4"
                     initial={{ opacity: 0 }}
@@ -45,7 +47,7 @@ export function Watermark({ variant = 'pattern', opacity = 0.03 }: WatermarkProp
                     transition={{ duration: 1, delay: 0.8 }}
                 />
                 <motion.img
-                    src="/logo-outline.svg"
+                    src={logoOutline}
                     alt=""
                     className="watermark-pattern__logo watermark-pattern__logo--5"
                     initial={{ opacity: 0 }}
@@ -60,9 +62,9 @@ export function Watermark({ variant = 'pattern', opacity = 0.03 }: WatermarkProp
     if (variant === 'scattered') {
         return (
             <div className="watermark-scattered" style={{ opacity }}>
-                <img src="/logo-outline.svg" alt="" className="watermark-scattered__logo watermark-scattered__logo--1" />
-                <img src="/logo-outline.svg" alt="" className="watermark-scattered__logo watermark-scattered__logo--2" />
-                <img src="/logo-outline.svg" alt="" className="watermark-scattered__logo watermark-scattered__logo--3" />
+                <img src={logoOutline} alt="" className="watermark-scattered__logo watermark-scattered__logo--1" />
+                <img src={logoOutline} alt="" className="watermark-scattered__logo watermark-scattered__logo--2" />
+                <img src={logoOutline} alt="" className="watermark-scattered__logo watermark-scattered__logo--3" />
             </div>
         );
     }
@@ -70,7 +72,7 @@ export function Watermark({ variant = 'pattern', opacity = 0.03 }: WatermarkProp
     // Versões simples left/right
     return (
         <motion.img
-            src="/logo-outline.svg"
+            src={logoOutline}
             alt=""
             className={`watermark watermark--${variant}`}
             style={{ opacity }}
